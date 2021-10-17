@@ -1,5 +1,5 @@
 import './adreses.json'
-import './header.scss'
+import './header.css'
 
 
 function Header() {
