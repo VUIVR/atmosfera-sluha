@@ -1,8 +1,10 @@
 import './App.css';
-import Header from './Header/header'
-import { BrowserRouter, Route } from 'react-router-dom';
-import MainPage from './MainPage';
-import AboutCompany from './MainPage';
+import Header from '../Components/Header/header'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import MainPage from '../Components/MainPage';
+import AboutCompany from '../Components/AboutCompany';
+import Navbar from '../Components/Navbar';
+
 
 
 function App() {
@@ -10,13 +12,16 @@ function App() {
     <BrowserRouter>
       <div>
         <Header />
-        <Route path='/MainPage' component={MainPage} />
-        <Route path='/AboutCompany' component={AboutCompany} />
-        {/* <Route path='/Servises' component={Servises} /> */}
-        {/* <Route path='/Products' component={Products} /> */}
-        {/* <Route path='/Contacts' component={Contacts} /> */}
+        <Navbar />
+        <Switch>
+          <Route exact path='/' component={MainPage} />
+          <Route path='/AboutCompany' component={AboutCompany} />
+          {/* <Route path='/Servises' component={Servises} /> */}
+          {/* <Route path='/Products' component={Products} /> */}
+          {/* <Route path='/Contacts' component={Contacts} /> */}
+        </Switch>
       </div>
-    </BrowserRouter>
+    </BrowserRouter >
 
   );
 }
