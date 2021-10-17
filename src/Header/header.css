@@ -2,3 +2,11 @@
     padding: 10px 20px;
 }
 
+.adress {
+    text-align: center;
+    color: #1c8594;
+}
+
+.city {
+    font-size: 16px;
+}
