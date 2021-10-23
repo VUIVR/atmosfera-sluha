@@ -1,28 +1,34 @@
-import './App.css';
-import Header from '../Components/Header/header'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import MainPage from '../Components/MainPage';
-import AboutCompany from '../Components/AboutCompany';
-import Navbar from '../Components/Navbar';
+import { Provider } from 'react-redux';
+import store from '../Store/store'
 
+import Header from '../Components/Header'
+import Navbar from '../Components/Navbar';
+import MainPage from '../Components/MainPage';
+import AboutCompanyPage from '../Components/AboutCompany';
+import Footer from '../Components/Footer';
+
+import './App.css';
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <div>
-        <Header />
-        <Navbar />
-        <Switch>
-          <Route exact path='/' component={MainPage} />
-          <Route path='/AboutCompany' component={AboutCompany} />
-          {/* <Route path='/Servises' component={Servises} /> */}
-          {/* <Route path='/Products' component={Products} /> */}
-          {/* <Route path='/Contacts' component={Contacts} /> */}
-        </Switch>
-      </div>
-    </BrowserRouter >
-
+    <Provider store={store}> {/* Подключение стора редакс */}
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Navbar />
+          <Switch>
+            <Route exact path='/' component={MainPage} />
+            <Route path='/AboutCompany' component={AboutCompanyPage} />
+            {/* <Route path='/Servises' component={Servises} /> */}
+            {/* <Route path='/Products' component={Products} /> */}
+            {/* <Route path='/Contacts' component={Contacts} /> */}
+          </Switch>
+          <Footer />
+        </div>
+      </BrowserRouter >
+    </Provider >
   );
 }
 

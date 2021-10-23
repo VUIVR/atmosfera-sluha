@@ -6,9 +6,9 @@ export default function Navbar() {
     <div>
         <Link to='/'>Главная</Link>
         <Link to='/AboutCompany'>О компании</Link>
-        {/* <Link to='/'>Услуги</Link>
-        <Link to='/'>Слуховые аппараты</Link>
-        <Link to='/'>Акссесуары</Link>
-        <Link to='/'>Контакты</Link>  */}
+        <Link to='/Servises'>Услуги</Link>
+        <Link to='/Products'>Слуховые аппараты</Link>
+        <Link to='/Acs'>Акссесуары</Link>
+        <Link to='/Contacts'>Контакты</Link>
     </div>)
 }

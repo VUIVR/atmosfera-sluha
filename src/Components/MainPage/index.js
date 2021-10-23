@@ -85,22 +85,22 @@ function MainPage() {
                         <h2 >Что мы предлагаем <span>своим клиентам</span></h2>
                         <ul >
                             <li >
-                                <span >1</span>
+                                <span>1</span>
                                 <span>Полноценную консультацию по вопросам, связанным с&nbsp;частичной потерей слуха</span>
                             </li>
 
                             <li >
-                                <span >2</span>
+                                <span>2</span>
                                 <span>Подбор слухового аппарата. Наш специалист проведет тестирование слуха и&nbsp;подберет индивидуальный аппарат</span>
                             </li>
 
                             <li >
-                                <span >3</span>
+                                <span>3</span>
                                 <span>Настройку приобретенной модели</span>
                             </li>
 
                             <li >
-                                <span >4</span>
+                                <span>4</span>
                                 <span>Возможность купить дополнительные аксессуары и&nbsp;комплектующие</span>
                             </li>
                         </ul>
@@ -109,7 +109,14 @@ function MainPage() {
                     </div>
                 </div>
             </section>
-            <section></section>
+            <section>
+                <div>
+                    <h2>
+                        Бренды <br/> слуховых аппартов
+                    </h2>
+                    <p>Компания «Атмосфера слуха» является одной из лидирующих фирм по продаже слуховых аппаратов.</p>
+                </div>
+            </section>
             <section></section>
             <section></section>
         </main>)
