@@ -1,51 +1,54 @@
+import { buildQueries } from "@testing-library/dom";
 import React from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+
+import style from './mainpage.module.css';
 
 function MainPage() {
     return (
         <main>
-            <section>
+            <section style={{display:"none"}}>
                 <div>
-                    <div>
-                        <h1>Слуховые аппараты</h1>
-                        <p>На заказ, персонально</p>
-                        <p>Компания «Атмосфера слуха» является одной из лидирующих фирм по продаже слуховых аппаратов.</p>
-                        <Link to='/AboutCompany'>Узнать подробнее</Link>
+                    <div className={style.content}>
+                        <h1 className={style.banner__title} >Слуховые аппараты</h1>
+                        <p className={style.banner__cubtitle}>На заказ, персонально</p>
+                        <p className={style.banner__text}>Компания «Атмосфера слуха» является одной из лидирующих фирм по продаже слуховых аппаратов.</p>
+                        <NavLink to='/AboutCompany' className={style.bunner__btn}>Узнать подробнее</NavLink>
                     </div>
                     <img src="./Images/img1.png" width="628" height="628" alt="Слуховые аппараты" />
                 </div>
             </section>
-            <section>
-                <div>
-                    <h2>Какие услуги <span>мы оказываем</span></h2>
-                    <p>Компания «Атмосфера слуха» является одной из лидирующих фирм по продаже слуховых аппаратов.</p>
+            <section >
+                <div className={style.content}>
+                    <h2 className={style.servises__title}>Какие услуги <span className={style.title_span}>мы оказываем</span></h2>
+                    <p className={style.banner__text}>Компания «Атмосфера слуха» является одной из лидирующих фирм по продаже слуховых аппаратов.</p>
                 </div>
-                <div>
-                    <h3 >Беспроцентная рассрочка</h3>
-                    <Link to='/AboutCompany'>Узнать подробнее</Link>
+                <div className={(style.servises__item, style.item_1)}>
+                    <h3 className={style.item_text}>Беспроцентная рассрочка</h3>
+                    <NavLink to='/AboutCompany' className={style.blueBtn}>Узнать подробнее</NavLink>
                 </div>
-                <div>
-                    <h3 >Бесплатный вызов на дом</h3>
-                    <Link to='/AboutCompany'>Узнать подробнее</Link>
+                <div className={style.servises__item}>
+                    <h3 className={style.item_text}>Бесплатный вызов на дом</h3>
+                    <NavLink to='/AboutCompany' className={style.blueBtn}>Узнать подробнее</NavLink>
                 </div>
-                <div>
-                    <h3 >Бесплатное тестирование слуха</h3>
-                    <Link to='/AboutCompany'>Узнать подробнее</Link>
+                <div className={style.servises__item}>
+                    <h3 className={style.item_text}>Бесплатное тестирование слуха</h3>
+                    <NavLink to='/AboutCompany' className={style.blueBtn}>Узнать подробнее</NavLink>
                 </div>
-                <div>
-                    <h3 >Бесплатная консультация</h3>
-                    <Link to='/AboutCompany'>Узнать подробнее</Link>
+                <div className={style.servises__item}>
+                    <h3 className={style.item_text}>Бесплатная консультация</h3>
+                    <NavLink to='/AboutCompany' className={style.blueBtn}>Узнать подробнее</NavLink>
                 </div>
-                <div>
-                    <h3 >Конпенсация от ФСС</h3>
-                    <Link to='/AboutCompany'>Узнать подробнее</Link>
+                <div className={style.servises__item}>
+                    <h3 className={style.item_text}>Конпенсация от ФСС</h3>
+                    <NavLink to='/AboutCompany' className={style.blueBtn}>Узнать подробнее</NavLink>
                 </div>
             </section>
-            <section>
+            <section style={{display:"none"}}>
                 <div>
                     <h2 >Хиты <span>продаж</span></h2>
                     <p >Мы подобрали самые продоваемые модели слуховых аппаратов для Вас</p>
-                    <Link to='/Products'>Перейти в каталог</Link>
+                    <NavLink to='/Products'>Перейти в каталог</NavLink>
                 </div>
                 <ul >
                     <li>
@@ -78,7 +81,7 @@ function MainPage() {
                 </ul>
 
             </section>
-            <section>
+            <section style={{display:"none"}}>
                 <div>
                     <img src="./images/offer.png" width="773" height="779" alt="our-offers" />
                     <div >
@@ -104,21 +107,49 @@ function MainPage() {
                                 <span>Возможность купить дополнительные аксессуары и&nbsp;комплектующие</span>
                             </li>
                         </ul>
-                        <Link to='/#feedback'>Записаться на прием</Link>
+                        <NavLink to='/#feedback'>Записаться на прием</NavLink>
 
                     </div>
                 </div>
             </section>
-            <section>
+            <section style={{display:"none"}}>
                 <div>
                     <h2>
-                        Бренды <br/> слуховых аппартов
+                        Бренды <br /> слуховых аппартов
                     </h2>
                     <p>Компания «Атмосфера слуха» является одной из лидирующих фирм по продаже слуховых аппаратов.</p>
                 </div>
+                <li>
+                    <img src="./images/widex.png" width="286" height="277" alt="Слуховые аппараты Widex" />
+                    <h3>Слуховые аппараты <br />Widex</h3>
+                    <NavLink to='/'>Перейти в каталог</NavLink>
+                </li>
+                <li>
+                    <img src="./images//bernafon.png" width="290" height="277" alt="Слуховые аппараты Bernafon" />
+                    <h3>Слуховые аппараты <br />Bernafon</h3>
+                    <NavLink to='/'>Перейти в каталог</NavLink>
+                </li>
+                <li>
+                    <img src="./images//istok.png" width="286" height="277" alt="Слуховые аппараты Исток-Аудио" />
+                    <h3 >Слуховые аппараты <br />Исток-Аудио</h3>
+                    <NavLink to='/'>Перейти в каталог</NavLink>
+                </li>
             </section>
-            <section></section>
-            <section></section>
+            <section style={{display:"none"}}>
+                <div id="feedback">
+                    <h2>Остались <span>вопросы?</span></h2>
+                    <p>Запишитесь на прием или оставьте заявку на вызов нашего специалиста, мы поможем вам решить ваш вопрос                    </p>
+                </div>
+                <form method="post" action="send.php">
+                    <h3>
+                        Заполните форму и мы свяжемся с вами <span>в ближайшее время</span>
+                    </h3>
+                    <input type="text" name="name" placeholder="Ваше ФИО" required="" />
+                    <input type="tel" name="phone" placeholder="Ваш номер телефона" required="" />
+                    <textarea name="comment" placeholder="Ваш комментарий"></textarea>
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </section>
         </main>)
 }
 

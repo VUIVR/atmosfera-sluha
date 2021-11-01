@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import ActionNumberActiveCity from '../../Store/ActionCreators/ACActiveCity';
 
+
 import './header.css'
 
 
@@ -23,15 +24,18 @@ function Header() {
       <div className="logo">
         {logo}
       </div>
-      <div className="adress">
-        <div className="city">
+      <div className="header__contacts">
+        <div className="header__city">
           <label>Ваш город:</label>
-          <select value={NumberActiveCity} onChange={(event) => dispatch(ActionNumberActiveCity(event.target.value))}>
+          <select
+            className="select-city"
+            value={NumberActiveCity}
+            onChange={(event) => dispatch(ActionNumberActiveCity(event.target.value))}>
             {listCities}
           </select>
         </div>
-        <div className="street">{adreses[NumberActiveCity].street}</div>
-        <div className="phone">{adreses[NumberActiveCity].phone}</div>
+        <div className="header__street">{adreses[NumberActiveCity].street}</div>
+        <div className="header__phone">{adreses[NumberActiveCity].phone}</div>
       </div>
     </header>
   )

@@ -11,6 +11,7 @@ import Footer from '../Components/Footer';
 import './App.css';
 
 
+
 function App() {
   return (
     <Provider store={store}> {/* Подключение стора редакс */}
@@ -20,12 +21,9 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path='/' component={MainPage} />
-            <Route path='/AboutCompany' component={AboutCompanyPage} />
-            {/* <Route path='/Servises' component={Servises} /> */}
-            {/* <Route path='/Products' component={Products} /> */}
-            {/* <Route path='/Contacts' component={Contacts} /> */}
+            <Route path='/AboutCompany' component={AboutCompanyPage} />            
           </Switch>
-          <Footer />
+         { <Footer />}
         </div>
       </BrowserRouter >
     </Provider >
