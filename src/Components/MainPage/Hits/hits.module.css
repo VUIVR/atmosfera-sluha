@@ -1,0 +1,15 @@
+.hits__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hits__item {
+    margin: 20px auto auto;
+    padding: 20px;
+    width: 270px;
+    background-color: #fff;
+    box-shadow: 0 14px 19px rgb(0 0 0 / 11%);
+    border-radius: 20px;
+    text-align: center;
+}

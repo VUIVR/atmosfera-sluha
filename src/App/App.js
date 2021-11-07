@@ -21,13 +21,13 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path='/' component={MainPage} />
-            <Route path='/AboutCompany' component={AboutCompanyPage} />            
+            <Route path='/AboutCompany' component={AboutCompanyPage} />
           </Switch>
-         { <Footer />}
+          <Footer />
         </div>
       </BrowserRouter >
     </Provider >
   );
 }
 
-export default App;
+export default App
