@@ -16,7 +16,7 @@ function App() {
   return (
     <Provider store={store}> {/* Подключение стора редакс */}
       <BrowserRouter>
-        <div>
+        <div className='body'>
           <Header />
           <Navbar />
           <Switch>

@@ -1,1 +1,45 @@
+.content {
+    padding: 20px 0;
+    text-align: center;
+}
 
+.blueBtn {
+    display: inline-block;
+    padding: 18px 40px;
+    margin: auto auto 0;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(96.12deg,#1bc8d8 15.76%,#56c8e8 98.76%);
+    border-radius: 150px;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 15%);
+    transition: .3s ease;
+    border: 0;
+}
+
+.blueBtn:hover {
+    background: linear-gradient(96.12deg,#0398a5 15.76%,#1da1c5 98.76%);
+    color: white;
+}
+
+
+
+.span {
+    font-weight: 700;
+    color: #1db9c8;
+}
+
+.text {
+    margin: 15px auto;
+    color: #1c8594;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.title{
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    color: #1c626b;
+}

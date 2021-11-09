@@ -1,30 +1,36 @@
 import { NavLink } from "react-router-dom";
 import style from './brends.module.css'
+import '../mainpage.css'
+
+import image1 from './Images/widex.png'
+import image2 from './Images/bernafon.png'
+import image3 from './Images/istok.png'
 
 export default function Brends() {
     return (
-        <section >
-                <div>
-                    <h2>
-                        Бренды <br /> слуховых аппартов
-                    </h2>
-                    <p>Компания «Атмосфера слуха» является одной из лидирующих фирм по продаже слуховых аппаратов.</p>
-                </div>
-                <li>
-                    <img src="./images/widex.png" width="286" height="277" alt="Слуховые аппараты Widex" />
-                    <h3>Слуховые аппараты <br />Widex</h3>
-                    <NavLink to='/'>Перейти в каталог</NavLink>
+        <section className={[style.content, style.bgr].join(' ')}>
+            <div>
+                <h2 className='title'> Бренды <br /> <span className='span'>слуховых аппартов</span>
+                </h2>
+                <p className='text'>Компания «Атмосфера слуха» является одной из лидирующих фирм по продаже слуховых аппаратов.</p>
+            </div>
+            <ul className={style.bullets}>
+                <li className={style.bullet}>
+                    <img src={image1} width="286" height="277" alt="Слуховые аппараты Widex" />
+                    <div className={style.text}>Слуховые аппараты <br />Widex</div>
+                    <NavLink to='/' className='blueBtn'>Перейти в каталог</NavLink>
                 </li>
-                <li>
-                    <img src="./images//bernafon.png" width="290" height="277" alt="Слуховые аппараты Bernafon" />
-                    <h3>Слуховые аппараты <br />Bernafon</h3>
-                    <NavLink to='/'>Перейти в каталог</NavLink>
+                <li className={style.bullet}>
+                    <img src={image2} width="290" height="277" alt="Слуховые аппараты Bernafon" />
+                    <div className={style.text}>Слуховые аппараты <br />Bernafon</div>
+                    <NavLink to='/' className='blueBtn'>Перейти в каталог</NavLink>
                 </li>
-                <li>
-                    <img src="./images//istok.png" width="286" height="277" alt="Слуховые аппараты Исток-Аудио" />
-                    <h3 >Слуховые аппараты <br />Исток-Аудио</h3>
-                    <NavLink to='/'>Перейти в каталог</NavLink>
+                <li className={style.bullet}>
+                    <img src={image3} width="286" height="277" alt="Слуховые аппараты Исток-Аудио" />
+                    <div className={style.text} >Слуховые аппараты <br />Исток-Аудио</div>
+                    <NavLink to='/' className='blueBtn'>Перейти в каталог</NavLink>
                 </li>
-            </section>
+            </ul>
+        </section>
     )
 }

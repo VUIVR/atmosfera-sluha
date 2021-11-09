@@ -8,15 +8,16 @@ import Brends from "./Brends";
 import Questions from "./Questions";
 
 
+
 function MainPage() {
     return (
         <main>
-            {/* <Apparaty/> */}
-            {/* <Uslugi /> */}
-            {<Hits />}
-            {/* <ForClients /> */}
-            {/* <Brends /> */}
-            {/* <Questions /> */}
+            <Apparaty/>
+            <Uslugi />
+            <Hits />
+            <ForClients />
+            <Brends />
+            <Questions />
         </main>)
 }
 

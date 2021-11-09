@@ -20,7 +20,7 @@ function Footer() {
                     <div>
                         СТРАНИЦЫ
                     </div>
-                    <ul className={(style.li, style.li_none)}>
+                    <ul className={[style.li, style.li_none].join(' ')}>
                         <li>
                             <NavLink to='/' className={style.footer__link}>
                                 Главная

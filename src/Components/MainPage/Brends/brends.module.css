@@ -1,0 +1,35 @@
+.content {
+    padding: 20px 0;
+    text-align: center;   
+}
+
+.bgr {
+    background-image: url('./Images/bgr.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 0 20px;
+}
+
+.bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bullet {
+    max-width: 270px;
+    padding: 20px;
+    margin: auto auto 20px;
+    background-color: #fff;   
+    box-shadow: 0 14px 15px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.text {
+    margin: 15px auto;
+    color: #1c8594;
+    font-weight: 400;
+    font-size: 18px;
+}
