@@ -7,8 +7,8 @@ import '../mainpage.css'
 export default function ForClients() {
     return (
         <section className={style.content}>
-                <div>
-                    <img src="./images/offer.png" width="773" height="779" alt="our-offers" />
+                
+                    <img className={style.img} src="./images/offer.png" width="773" height="779" alt="our-offers" />
                     <div >
                         <h2 className={style.title}>Что мы предлагаем <span className='span'>своим клиентам</span></h2>
                         <ul className={style.bullets}>
@@ -34,9 +34,8 @@ export default function ForClients() {
                         </ul>
                         <NavLink to='/#feedback' className='blueBtn'>Записаться на прием</NavLink>
 
-                    </div>
                 </div>
             </section>
     )
-    
+
 }

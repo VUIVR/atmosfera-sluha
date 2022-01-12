@@ -1,0 +1,102 @@
+nav a {
+    text-decoration: none;
+    color: #1c8594;
+}
+
+.button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #1c8594;
+    background-color: #31cbdc;
+    box-sizing: border-box;
+    display: block;
+    z-index: 2;
+}
+
+.line {
+    display: block;
+    width: 38px;
+    height: 2px;
+    position: absolute;
+    top: 23px;
+    left: 5px;
+    background-color: white;
+}
+
+.line::after {
+    display: block;
+    width: 38px;
+    height: 2px;
+    content: " ";
+    position: absolute;
+    background-color: white;
+    top: -10px;
+
+}
+
+.line::before {
+    display: block;
+    width: 38px;
+    height: 2px;
+    content: " ";
+    position: absolute;
+    background-color: white;
+    top: 10px;
+}
+
+
+.linkListShow {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #cfeff5;
+    border: 1px solid #1c8594;
+    border-radius: 5px;
+}
+
+.linkListHide {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+        background-color: #47c4e3;
+        }
+
+    nav a {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding: 0 10px;
+        color: #ffffff;
+    }
+
+    nav a:focus {
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    
+    .linkListHide {
+        display: flex;
+    }
+    
+    .list {
+        justify-content: space-between;
+    }
+
+    .button {
+        display: none;
+    }
+}

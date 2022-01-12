@@ -1,6 +1,7 @@
 .content {
     padding: 20px 0;
-    text-align: center;   
+    text-align: center;
+    margin-top: 20px;  
 }
 
 .bgr {
@@ -15,6 +16,8 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .bullet {
@@ -32,4 +35,8 @@
     color: #1c8594;
     font-weight: 400;
     font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    
 }

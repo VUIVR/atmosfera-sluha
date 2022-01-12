@@ -1,3 +1,28 @@
+.content {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.title{
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    color: #1c626b;
+}
+
+.span {
+    font-weight: 700;
+    color: #1db9c8;
+}
+
+.text {
+    margin: 15px auto;
+    color: #1c8594;
+    font-weight: 400;
+    font-size: 18px;
+}
+
 .form {
     position: relative;
     max-width: 380px;

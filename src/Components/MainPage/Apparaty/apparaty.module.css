@@ -48,3 +48,14 @@
     background: #07707e;
     color: #fff;
 }
+
+
+@media all and (min-width: 1024px) {
+    .content {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+
+}

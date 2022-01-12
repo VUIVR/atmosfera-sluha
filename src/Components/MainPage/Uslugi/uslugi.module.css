@@ -1,6 +1,7 @@
 .content {
     padding: 20px 0;
     text-align: center;
+    margin-top: 20px;
 }
 
 .title{
@@ -21,6 +22,11 @@
 .span {
     font-weight: 700;
     color: #1db9c8;
+}
+
+.listItem {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
