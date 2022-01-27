@@ -1,9 +1,11 @@
 import React from "react";
-import listProducts from "../../Information/listSluhApparats.json";
+import Filtr from "./Filtr";
 
 
 function Products () {
-    return <h2>О компании</h2>
+    return <>
+    <Filtr/>
+    </>
 }
 
 export default Products

@@ -6,6 +6,8 @@ import Header from '../Components/Header'
 import Navbar from '../Components/Navbar';
 import MainPage from '../Components/MainPage';
 import AboutCompanyPage from '../Components/AboutCompany';
+import Products from '../Components/Products';
+
 import Footer from '../Components/Footer';
 
 import './App.css';
@@ -22,6 +24,7 @@ function App() {
           <Switch>
             <Route exact path='/' component={MainPage} />
             <Route path='/AboutCompany' component={AboutCompanyPage} />
+            <Route path='/Products' component={Products} />
           </Switch>
           <Footer />
         </div>

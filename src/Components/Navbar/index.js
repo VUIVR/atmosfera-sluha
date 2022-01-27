@@ -6,10 +6,10 @@ import style from './navbar.module.css'
 
 
 export default function Navbar() {
-    const [viewList, setViewList] = useState(false);
+    const [viewMenu, setViewMenu] = useState(false);
 
     function List() {
-        if (viewList) {
+        if (viewMenu) {
             return List = style.linkListShow
         }
         else {
@@ -17,10 +17,9 @@ export default function Navbar() {
         }
     }
 
-    console.log(navList);
     return (
         <nav>
-            <button className={style.button} onClick={() => {setViewList(!viewList) }}><div className={style.line}> </div></button>
+            <button className={style.button} onClick={() => {setViewMenu(!viewMenu) }}><div className={style.line}> </div></button>
             <div className={[style.list, List()].join(' ')}>
                 {navList}
             </div>

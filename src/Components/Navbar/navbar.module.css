@@ -87,11 +87,10 @@ nav a {
         color: #ffffff;
     }
 
-    
     .linkListHide {
         display: flex;
     }
-    
+
     .list {
         justify-content: space-between;
     }
